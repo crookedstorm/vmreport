@@ -21,8 +21,8 @@ Get-VMInventoryReport -filePath "C:\vCenter_Servers.txt"
 #>
 
 
-# This needs the PowerCLI modules from VMWare loaded.
-Function Get-VMInventoryReport{
+# This needs the PowerCLI modules from VMWare installed.
+
 	[CmdletBinding()]
 	param(
 		[Parameter(Mandatory=$True,
@@ -78,4 +78,3 @@ Function Get-VMInventoryReport{
 		}
 	}
 	END {}
-}
